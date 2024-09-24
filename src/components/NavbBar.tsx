@@ -2,6 +2,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import vector from "../assets/vector1.png";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -28,9 +29,9 @@ const NavBar = () => {
               <a href="#pricing" className="hover:text-yellow-400">
                 Pricing
               </a>
-              <a href="#faq" className="hover:text-yellow-400">
+              <Link to="/" className="hover:text-yellow-400">
                 FAQ
-              </a>
+              </Link>
             </ul>
 
             <img src={vector} alt="" className="absolute h-20 -top-1" />
