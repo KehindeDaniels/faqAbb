@@ -6,6 +6,7 @@ import Refund from "./pages/Refund";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavbBar";
 import Faq from "./pages/Faq";
+// import SinglePost from "./pages/SinglePost"; // Import the SinglePost component
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Faq />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<SinglePost />} />{" "}
+          {/* Add dynamic route for single blog post */}
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/refund" element={<Refund />} />
